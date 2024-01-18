@@ -3,10 +3,10 @@
  * @param {object} obj - объект, который нужно отсортировать
  * @param {Array} arrProp - массив свойств для сортировки
  *
- * @return {Array} форматированный массив объектов, отсортированный по указанным свойствам
- *
  * @throws {Error} если для сортировки передан не объект
  * @throws {Error} если передан не массив свойств
+ *
+ * @return {Array} форматированный массив объектов, отсортированный по указанным свойствам
  */
 export default function orderByProps(obj, arrProps = []) {
   if (typeof obj !== "object" || obj === null || Array.isArray(obj)) {
