@@ -10,5 +10,3 @@ const character = {
 
 console.log(orderByProps(character, ["name", "level"]));
 console.log(orderByProps(character));
-console.log(orderByProps());
-console.log(orderByProps(character, {}));

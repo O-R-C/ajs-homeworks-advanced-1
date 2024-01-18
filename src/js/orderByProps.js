@@ -38,9 +38,8 @@ const sortByProps = (obj, arrProps) => {
     let { [item]: propName, ...rest } = restObj ?? obj;
     restObj = rest;
 
-    return [...acc, [item, propName]];
+    return propName ? [...acc, [item, propName]] : acc;
   }, []);
-
   return [...result, ...sortByAlphabet(restObj)];
 };
 
